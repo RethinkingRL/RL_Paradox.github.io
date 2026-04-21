@@ -3,275 +3,84 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="Rethinking RL Evaluation: Can Benchmarks Truly Reveal Failures Of RL Methods?">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="title" content="The Paradox of Outcome Optimization: A Causal Information-Theoretic Bound on Reasoning Shortcuts in LLMs">
+  <meta name="description" content="A polished academic-style landing page for reading and downloading The Paradox of Outcome Optimization: A Causal Information-Theoretic Bound on Reasoning Shortcuts in LLMs.">
+  <meta name="keywords" content="LLM, reinforcement learning, reasoning, out-of-distribution generalization, process reward models, causal inference">
+  <meta name="author" content="Zihan Chen, Yiming Zhang, Wenxiang Geng, Zenghui Ding, Yining Sun">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
-
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
+
+  <title>The Paradox of Outcome Optimization: A Causal Information-Theoretic Bound on Reasoning Shortcuts in LLMs</title>
+
+  <link rel="icon" type="image/x-icon" href="static/images/favicon_new.ico">
+  <link rel="apple-touch-icon" href="static/images/favicon_new.ico">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
-
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
   <noscript>
     <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="static/css/bulma-slider.min.css">
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
-  
-  <!-- Fonts - Optimized loading -->
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
+
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
-    "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
-    ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
-  }
-  </script>
 </head>
 <body>
-
-
-  <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 1</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div> -->
-
   <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">RETHINKING RL EVALUATION: CAN BENCHMARKS
-              TRULY REVEAL FAILURES OF RL METHODS?</h1>
+    <section class="hero publication-header">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">The Paradox of Outcome Optimization: A Causal Information-Theoretic Bound on Reasoning Shortcuts in LLMs</h1>
+
               <div class="is-size-5 publication-authors">
                 <span class="author-block">
-                  <a href="您的个人主页链接" target="_blank">Zihan Chen</a><sup>*1,2</sup>,
+                  <a href="#" target="_blank">Zihan Chen</a><sup>*1,2</sup>,
                 </span>
                 <span class="author-block">
-                  <a href="Yiming的链接" target="_blank">Yiming Zhang</a><sup>*1,2</sup>,
+                  <a href="#" target="_blank">Yiming Zhang</a><sup>*1,2</sup>,
                 </span>
                 <span class="author-block">
-                  <a href="Hengguang的链接" target="_blank">Hengguang Zhou</a><sup>3</sup>,
+                  <a href="#" target="_blank">Wenxiang Geng</a><sup>1,3</sup>,
                 </span>
                 <span class="author-block">
-                  <a href="Zenghui的链接" target="_blank">Zenghui Ding</a><sup>&dagger;1</sup>,
-                </span>
-                
-                <span class="author-block">
-                  <a href="Yining的链接" target="_blank">Yining Sun</a><sup>1</sup>,
+                  <a href="#" target="_blank"><strong>Zenghui Ding</strong></a><sup>&dagger;1</sup>,
                 </span>
                 <span class="author-block">
-                  <a href="Cho-Jui的链接" target="_blank">Cho-Jui Hsieh</a><sup>&dagger;3,4</sup>
+                  <a href="#" target="_blank">Yining Sun</a><sup>1,2</sup>
                 </span>
               </div>
 
               <div class="is-size-5 publication-authors">
-                <span class="author-block"><sup>1</sup>HFIPS, Chinese Academy of Sciences,</span>&nbsp;
-                <span class="author-block"><sup>2</sup>University of Science and Technology of China,</span>&nbsp;
-                <span class="author-block"><sup>3</sup>University of California, Los Angeles</span>&nbsp;
-                <span class="author-block"><sup>4</sup>Arena</span>
+                <span class="author-block"><sup>1</sup>HFIPS, Chinese Academy of Sciences,</span>
+                <span class="author-block"><sup>2</sup>University of Science and Technology of China,</span>
+                <span class="author-block"><sup>3</sup>School of Artificial Intelligence, Anhui Agricultural University</span>
               </div>
-              
+
               <div class="is-size-5 publication-authors">
-                <span class="author-block">
-                  <b>ACL 2026 Findings</b>
-                </span>
-                
+                <span class="author-block"><b>ACL 2026 Main Conference</b></span>
                 <span class="eql-cntrb">
                   <small>
                     <br>
@@ -280,375 +89,183 @@
                 </span>
               </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2510.10541.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a href="static/pdfs/LuaLaTeX_and_XeLaTeX_Template_for__ACL_Style_Files%20(9).pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
                       </span>
-                      <span>Supplementary</span>
+                      <span>Paper</span>
                     </a>
-                  </span> -->
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2510.10541" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                  <span class="link-block">
+                    <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-<!-- Teaser video-->
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section> -->
-<!-- End teaser video -->
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/OverView.png" alt="Method Overview Diagram" style="width: 100%; height: auto; border-radius: 10px;">
-
-      <h2 class="subtitle has-text-centered" style="margin-top: 1.5rem;">
-        <b>Figure 1: Method Overview.</b> The workflow begins by diagnosing benchmark
-        flaws with novel metrics to uncover a core symptom: a vanishing generalization gap. It then proceeds
-        through a suite of stress tests that reveal the brittle, shortcut-based nature of the learned skills,
-        culminating in a new set of principles for more robust evaluation.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Current benchmarks are inadequate for evaluating progress in reinforcement learning (RL) for large language models (LLMs). Despite recent benchmark gains reported for RL, we find that training on these benchmarks’ training sets achieves nearly the same performance as training directly on the test sets, suggesting that the benchmarks cannot reliably separate further progress.To study this phenomenon, we introduce a diagnostic suite and the Oracle Performance Gap (OPG) metric that quantifies the performance difference between training on the train split versus the test split of a benchmark. We further analyze this phenomenon with stress tests and find that, despite strong benchmark scores, existing RL methods struggle to generalize across distribution shifts, varying levels of difficulty, and counterfactual scenarios: shortcomings that current benchmarks fail to reveal.We conclude that current benchmarks are insufficient for evaluating generalization and propose three core principles for designing more faithful benchmarks: sufficient difficulty, balanced evaluation, and distributional robustness.
-          </p>
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="overview-figure-shell">
+          <figure class="overview-figure-card">
+            <img src="static/images/Overreview.png" alt="Overview figure for The Paradox of Outcome Optimization and the Causal Solution" loading="lazy">
+            <figcaption class="overview-figure-caption">
+              <strong>Figure 1: Overview.</strong> The figure summarizes the paradox of outcome optimization, the reward-induced shortcut collapse mechanism, and the role of process supervision as the causal solution.
+            </figcaption>
+          </figure>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+    </section>
 
-
-<!-- Image carousel -->
-<section class="section">
-  <div class="container is-max-desktop">
-    
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Analysis Framework & Key Results</h2>
-        <div class="content has-text-justified">
-          <p>
-            <strong>The Oracle Performance Gap (OPG).</strong> 
-            To audit the validity of current benchmarks, we introduce the OPG metric. Unlike standard generalization gaps, OPG measures the <em>discriminative power</em> of a test set by comparing a model trained on the training data against an <strong>"Oracle" model</strong> (fine-tuned explicitly on the test set).
-          </p>
-          <p>
-            <strong>Experiment Setup.</strong>
-            We evaluated <strong>Qwen2.5 (3B & 7B)</strong> across four benchmarks: MATH, GSM8K, HeadQA, and DeepScaler. We systematically compared baselines, Standard SFT, and RL-tuned models against their respective Oracle upper bounds to isolate the effects of the fine-tuning paradigm.
-          </p>
-          <p>
-            <strong>Finding: The Vanishing Generalization Gap.</strong>
-            Our analysis reveals a stark contrast between paradigms. While SFT models exhibit a large and expected OPG (indicating valid generalization challenges), this gap <strong>collapses to near-zero for RL-trained models</strong>. This suggests that for RL, the classical assumption that "unseen" test data is a sufficient measure of generalization no longer holds.
-          </p>
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Large Language Models (LLMs) aligned via outcome-based Reinforcement Learning (RL) frequently exhibit a critical failure mode: they achieve high performance on in-distribution benchmarks while demonstrating brittle reasoning capabilities on out-of-distribution (OOD) tasks. We term this phenomenon Reward-Induced Manifold Collapse. In this paper, we establish a rigorous theoretical framework bridging Structural Causal Models (SCM) and the Information Bottleneck (IB) principle to explain this paradox. We formally define reasoning as a high-complexity causal process and shortcut learning as the exploitation of low-complexity spurious correlations. We show that under the implicit inductive bias of Stochastic Gradient Descent (SGD), models optimized for outcome rewards are biased toward shortcut solutions whenever the training distribution allows for a "Markovian Screening" of the true causal mechanism. Furthermore, we derive a new generalization bound based on Semantic Coverage Measure (eta) rather than sample size, theoretically showing why data scaling on homogeneous distributions may fail to correct reasoning flaws. Finally, we show that Process Reward Models (PRMs) function as Topological Filters, enforcing step-wise mutual information constraints that render the low-complexity shortcut manifold inadmissible. Our theoretical contributions provide a mathematical grounding for the role of process supervision beyond simple credit assignment.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="hero is-small">
-      <div class="hero-body">
-        <div class="container">
-          <div id="results-carousel" class="carousel results-carousel">
-            
+        <div class="quick-grid">
+          <article class="quick-card">
+            <div class="quick-icon"><i class="fas fa-layer-group"></i></div>
+            <h3>Theorem 1: Shortcut Screening</h3>
+            <p>If the training reward is already explained by shortcut features and those shortcuts are easier to learn than causal features, outcome-based training is driven toward shortcut-dominated representations.</p>
+          </article>
+          <article class="quick-card">
+            <div class="quick-icon"><i class="fas fa-project-diagram"></i></div>
+            <h3>Theorem 2: Semantic Coverage Bound</h3>
+            <p>Robust OOD error is controlled by semantic coverage rather than raw sample count, so scaling data alone does not remove failure when the training distribution stays homogeneous.</p>
+          </article>
+          <article class="quick-card">
+            <div class="quick-icon"><i class="fas fa-filter"></i></div>
+            <h3>Theorem 3: PRM as Topological Filter</h3>
+            <p>Process rewards enforce valid intermediate transitions, turning shortcut solutions into high-loss regions and pushing optimization toward causally consistent reasoning paths.</p>
+          </article>
+        </div>
+
+        <div class="theorem-gallery-block">
+          <div class="has-text-centered" style="margin: 2.5rem 0 1.5rem;">
+            <span class="section-kicker">Theorem Gallery</span>
+            <h2 class="title is-3">Rendered Theorem Snapshots</h2>
+            <p class="subtitle has-text-centered" style="max-width: 760px; margin: 0.75rem auto 0;">
+              Scroll through the rendered LaTeX snapshots for the three central theoretical results.
+            </p>
+          </div>
+          <div id="theorem-carousel" class="carousel results-carousel">
             <div class="item">
-              <img src="static/images/result_rl.png" alt="RL Performance Table" style="width:100%; object-fit: contain;"/>
+              <img src="static/images/theorem1.png" alt="Theorem 1 screenshot: Reward-Induced Manifold Collapse" loading="lazy"/>
               <h2 class="subtitle has-text-centered">
-                <strong>Table 1: Benchmark Limitation.</strong> Comparison of RL models on training subsets vs. the Oracle model. The OPG (gap) is negligible, indicating RL agents effectively "memorize" the test distribution patterns.
+                Theorem 1. Reward-Induced Manifold Collapse: shortcut features that already explain training reward can dominate optimization and screen out causal features.
               </h2>
             </div>
-
             <div class="item">
-              <img src="static/images/result_sft.png" alt="SFT Performance Table" style="width:100%; object-fit: contain;"/>
+              <img src="static/images/theorem2.png" alt="Theorem 2 screenshot: Coverage-Dependent Generalization Error" loading="lazy"/>
               <h2 class="subtitle has-text-centered">
-                <strong>Table 2: SFT Generalization.</strong> Unlike RL, SFT models show a significant gap between standard training and Oracle performance, confirming the benchmarks pose a valid challenge for Supervised Fine-Tuning.
+                Theorem 2. Coverage-Dependent Generalization Error: robust OOD risk is bounded by semantic coverage rather than raw sample count alone.
               </h2>
             </div>
+            <div class="item">
+              <img src="static/images/theorem3.png" alt="Theorem 3 screenshot: Topological Separation via Step-wise Mutual Information" loading="lazy"/>
+              <h2 class="subtitle has-text-centered">
+                Theorem 3. Topological Separation via Step-wise Mutual Information: process rewards act as filters that exclude shortcut manifolds from the optimal set.
+              </h2>
+            </div>
+          </div>
+        </div>
 
+        <div class="experiment-gallery-block">
+          <div class="has-text-centered" style="margin: 3rem 0 1.5rem;">
+            <span class="section-kicker">Experimental Results</span>
+            <h2 class="title is-3">Selected Result Figures</h2>
+            <p class="subtitle has-text-centered" style="max-width: 760px; margin: 0.75rem auto 0;">
+              Two representative result figures are shown below to complement the theorem gallery with empirical evidence.
+            </p>
+          </div>
+          <div class="experiment-grid">
+            <article class="experiment-card">
+              <figure class="experiment-figure">
+                <img src="static/images/result1.png" alt="Experimental result figure 1" loading="lazy">
+                <figcaption class="experiment-caption">
+                  <strong>Result Figure 1.</strong> Main experimental result.
+                </figcaption>
+              </figure>
+            </article>
+            <article class="experiment-card">
+              <figure class="experiment-figure">
+                <img src="static/images/result2.png" alt="Experimental result figure 2" loading="lazy">
+                <figcaption class="experiment-caption">
+                  <strong>Result Figure 2.</strong> Additional benchmark or ablation result.
+                </figcaption>
+              </figure>
+            </article>
           </div>
         </div>
       </div>
-    </div>
-    </div>
-</section>
-<!-- End image carousel -->
+    </section>
 
-
-<section class="section">
-  <div class="container is-max-desktop">
-    
-    <h2 class="title is-3 has-text-centered">Benchmark Design Principles</h2>
-    <div class="content has-text-centered">
-      <p>
-        Building on our analysis, we identify three key principles for effective RL generalization evaluation: 
-        <strong>testing cross-difficulty generalization</strong>, <strong>assessing distributional robustness</strong>, and <strong>probing counterfactual reasoning</strong>.
-      </p>
-    </div>
-
-    <hr>
-
-    <h3 class="title is-4">Principle 1: Stratify by Difficulty</h3>
-    <div class="content has-text-justified">
-      <p>
-        <strong>The Paradox of Average Scores.</strong> A difficulty-agnostic evaluation masks substantial differences in generalization. Our analysis shows that models trained on easy data fail on hard tasks, yet their aggregated average scores remain deceptively similar to strong generalists. 
-        Therefore, benchmarks must report performance across difficulty levels separately.
-    </div>
-
-    <div class="hero is-small">
-      <div class="hero-body">
-        <div class="container">
-          <div id="difficulty-carousel" class="carousel results-carousel">
-            
-            <div class="item">
-              <img src="static/images/fig_illusion.png" alt="Illusion of Average Performance" style="width:100%; object-fit: contain;"/>
-              <h2 class="subtitle has-text-centered">
-                <strong>The Illusion of Average.</strong> (a) Stratified evaluation reveals widening gaps. (b) Average scores mask these failures.
-              </h2>
+    <section class="section hero is-light" id="preview">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <div class="preview-header has-text-centered">
+              <span class="section-kicker">Poster</span>
+              <h2 class="title is-3">Poster Is Coming Soon</h2>
+              <p class="preview-note">
+                A poster version of this work will be added here in a future update.
+              </p>
             </div>
 
-            <div class="item">
-              <img src="static/images/fig_trend.png" alt="Cross Difficulty Trend" style="width:100%; object-fit: contain;"/>
-              <h2 class="subtitle has-text-centered">
-                <strong>Training on Difficulty.</strong> Training on harder problems (L4-L5) boosts transferability.
-              </h2>
+            <div class="poster-placeholder">
+              <div class="preview-header has-text-centered">
+                <p class="preview-note">
+                  Poster is coming soon.
+                </p>
+              </div>
             </div>
-
           </div>
         </div>
       </div>
-    </div>
-    
-    <br>
+    </section>
 
-    <h3 class="title is-4">Principle 2: Test Distributional Robustness</h3>
-    <div class="content has-text-justified">
-      <p>
-        <strong>Finding: Performance Inversion.</strong> Fine-tuning on a narrow distribution (<i>M</i><sub>core</sub>) leads to brittleness. As semantic distance increases (<i>d</i><sub>1</sub> &rarr; <i>d</i><sub>5</sub>), the specialist's advantage vanishes and eventually turns into a penalty compared to the baseline.
-        Benchmarks must include out-of-distribution (OOD) stress tests to penalize this brittleness.
-      </p>
-    </div>
-
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <img src="static/images/tab_distribution.png" alt="Distribution Test Results" style="width: 100%; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-        <h2 class="subtitle has-text-centered" style="font-size: 0.9rem; margin-top: 10px;">
-          <strong>Table 3: Performance Inversion.</strong> The specialist model (<i>M</i><sub>core</sub>) excels locally but fails on OOD data (<i>d</i><sub>5</sub>), performing worse than the baseline.
-        </h2>
-      </div>
-    </div>
-    
-    <br>
-
-    <h3 class="title is-4">Principle 3: Probe Counterfactual Reasoning</h3>
-    
-    <div class="columns is-vcentered">
-      
-      <div class="column is-7">
-        <div class="content has-text-justified">
-          <p>
-            <strong>Reasoning vs. Recitation.</strong> 
-            We distinguish true deduction from memorization by modifying problems to include counterfactual rules (e.g., changing the order of operations).
-          </p>
-          <p>
-            <strong>Finding:</strong> 
-            Models consistently default to reciting memorized priors rather than reasoning from the new premises. Performance collapses on the Counterfactual Set (<i>D</i><sub>cf</sub>) compared to the Balanced Set (<i>D</i><sub>bal</sub>), as shown in the table.
-            Benchmarks require problems that create a direct conflict between priors and on-the-fly deduction.
-          </p>
-        </div>
-      </div>
-
-      <div class="column is-5 has-text-centered">
-        <img src="static/images/tab_counterfactual.png" alt="Counterfactual Results" style="width: 80%; border-radius: 5px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
-        <p class="is-size-7" style="margin-top: 5px;">
-          <strong>Table 4: Performance Collapse.</strong>
-        </p>
-      </div>
-      
-    </div>
-
-  </div>
-</section>
-
-
-
-
-<!-- Youtube video -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">  
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section> -->
-<!--End paper poster -->
-
-
-
-<!--BibTex citation -->
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <div class="bibtex-header">
-      <h2 class="title">BibTeX</h2>
-      <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-        <i class="fas fa-copy"></i>
-        <span class="copy-text">Copy</span>
-      </button>
-    </div>
-    <pre id="bibtex-code"><code>@misc{chen2025rethinkingrlevaluationbenchmarks,
-      title={Rethinking RL Evaluation: Can Benchmarks Truly Reveal Failures of RL Methods?}, 
-      author={Zihan Chen and Yiming Zhang and Hengguang Zhou and Zenghui Ding and Yining Sun and Cho-Jui Hsieh},
-      year={2025},
-      eprint={2510.10541},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2510.10541}, 
-}</code></pre>
-  </div>
-</section>
-<!--End BibTex citation -->
-
+  </main>
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+  </footer>
+</body>
+</html>
